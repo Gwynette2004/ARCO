@@ -1,0 +1,363 @@
+/*nav bar*/
+
+.nav{
+    padding-bottom: 20px;
+}
+
+.logo{
+    width: 10px;
+}
+.logo img{
+    padding-right: 10%;
+    width: 100px;
+    position: absolute;
+}
+
+.user img{
+    margin-top: 30px;
+    padding-left: 87%;
+    width: 70px;
+    position: absolute;
+}
+
+.nav-left{
+    position: absolute;
+    padding-left: 30%;
+    margin-top: 40px;
+    padding-bottom: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nbutton {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    margin-left: 25px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    padding: 5px;
+    transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nbutton:visited {
+    color: #4F4A45;
+}
+
+.nbutton:hover {
+    border-bottom: 2px solid #4F4A45;
+}
+
+
+
+
+.menu{
+    margin-left: 10px;
+    padding-top: 20%;
+}
+
+/*button */
+
+.create{
+    font-size: 75px;
+    text-align: left;
+    color: white;
+    background-color: #ED7D31;
+    border-radius: 30px;
+    padding: 15px;
+    margin-bottom: 20px;
+    width: 410px; /**/
+    border: 30px transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out; /* Add transition for background color */
+}
+
+.create:hover {
+    background-color: #FF4206; /* Change the background color on hover */
+}
+
+
+.create img{
+    margin-right: 10px;
+    width: 60px;
+}
+
+.summary{
+    font-size: 60px;
+    text-align: left;
+    color: white;
+    background-color: #ED7D31;
+    border-radius: 30px;
+    padding: 23px;
+    margin-bottom: 20px;
+    width: 410px; /**/
+    border: 30px transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out; /* Add transition for background color */
+}
+
+.summary:hover {
+    background-color: #FF4206; /* Change the background color on hover */
+}
+
+
+.summary img{
+    margin-right: 10px;
+    width: 41px;
+}
+
+.month {
+    color: #4F4A45;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 25px;
+    text-decoration: none;
+}
+    
+
+.calendar{
+    color: #4F4A45;
+    font-family: "Poppins", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    margin-left: 25px;
+    text-decoration: none;
+    
+}
+
+/*files*/
+
+.slider-container {
+    overflow: hidden;
+    position: relative; /* Add this line */
+    width: 450px; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the container */
+}
+
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    transform: translateY(-50%); /* Center the button vertically */
+    z-index: 2; /* Ensure a higher z-index than the slides */
+}
+
+
+.nav-button.left {
+    left: 20px; /* Adjust as needed */
+}
+
+
+.nav-button.right {
+    right: 20px;
+}
+
+.slider {
+    width: 3500px;
+    margin-left: 95px;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    height: 350px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.slider .slide {
+    width: 1000px; /* Adjust the width as needed */
+}
+
+
+/*calendar*/
+
+.vertical-slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 450px;
+    height: 260px;
+    margin: 0 auto;
+}
+
+.vertical-nav-button {
+    position: absolute;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    z-index: 2;
+    margin-top: 10px;
+}
+
+.vertical-nav-button.up {
+    left: 47%; /* Adjust as needed */
+    transform: translateX(-50%);
+    top: -10px; /* Adjust as needed */
+}
+
+.vertical-nav-button.down {
+    left: 47%; /* Adjust as needed */
+    transform: translateX(-50%);
+    bottom: -1px; /* Adjust as needed */
+}
+
+.vertical-slider {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    overflow: hidden; /* Hide overflow */
+}
+
+.vertical-slide {
+    text-align: center;
+    height: 50px; /* Adjust the height as needed */
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border-radius: 40px;
+    border: transparent;
+    display: none; /* Initially hide all slides */
+    font-size: 20px;
+    color: white;
+    background-color: #ED7D31;
+    border-radius: 20px;
+    border: 30px transparent;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    transition: background-color 0.3s ease-in-out; /* Add transition for background color */
+}
+
+.vertical-slide:hover {
+    background-color: #FF4206; /* Change the background color on hover */
+}
+
+
+
+.vertical-slider .vertical-slide {
+    width: 90%; /* Adjust the width to fill the container */
+}
+
+.vertical-slide:nth-child(-n+4) {
+    display: block; /* Show the first 4 slides */
+}
+
+
+@media (min-width: 1000px) {
+    @media (min-width: 1000px) {
+       
+    
+        .nav-left {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .nbutton {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            margin-left: 25px;
+            text-decoration: none;
+            border: 2px solid transparent;
+            padding: 5px;
+            transition: border 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+    
+        .menu {
+            position: absolute;
+            overflow: hidden;
+            margin-left: 180px; /* Adjust the left margin as needed */
+            margin-top: 75px; /* Adjust the top margin as needed */
+            padding-top: 0px;
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .create,
+        .summary {
+            font-size: 90px;
+            text-align: center;
+            width: 540px;
+            height: 133px; /* Adjust the width to fit the content */
+            padding: 0px;
+        }
+
+        .summary{
+            font-size: 78px;
+            margin-bottom: 10px;
+        }
+    
+        .create img,
+        .summary img {
+            text-align: center;
+            width: 70px; /* Adjust the width as needed */
+        }
+
+        .summary img{
+            padding-top: 20px;
+        }
+
+        .calendar{
+            position: absolute;
+            font-size: 38px;
+            font-weight: 700;
+            margin-left: 730px;
+            margin-top: 65px;
+            text-decoration: none;
+            
+        }
+
+        .vertical-slider-container {
+            overflow: hidden;
+            position: relative;
+            width: 520px;
+            height: 230px;
+            margin-top: 132px;
+            margin-left: 730px;
+        }
+        
+        .vertical-slide{
+            border-radius: 40px;
+        }
+        
+        .month{
+            margin-left: 190px;
+            margin-top: 10px;
+        }
+
+        .slider-container {
+            overflow: hidden;
+            position: relative; /* Add this line */
+            width: 1500px; /* Adjust the width as needed */
+            margin-top: -30px; /* Center the container */
+        }
+        
+        .slider {
+            width: 2500px;
+            margin-left: 95px;
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .slide {
+            height: 250px;
+            margin-right: 10px;
+            margin-left: 10px;
+            border-radius: 20px;
+            border: transparent;
+        }
+        
+        .nav-left{
+            padding-left:68%;
+        }
+    }
+}
