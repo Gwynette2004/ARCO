@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/ARCO/dstyle.css">
+    <link rel="stylesheet" href="dstyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -12,29 +12,30 @@
 <body>
     <div class="nav">
         <nav>
-        <div class="nav">
-            <img src="/ARCO/assets/Logo.png" alt="Logo">
-        </a>
+            <div class="nav">
+                <img src="/assets/Logo.png" alt="Logo">
+            </a>            
         <div class="nav-left">
-        <a href="#home" class="nbutton">HOME</a>
-        <a href="#about" class="nbutton">CREATE</a>
+        <a href="dashboard.html" class="nbutton">HOME</a>
+        <a href="create_form.html" class="nbutton">CREATE</a>
         <a href="#services" class="nbutton">SUMMARY</a>
         <a href="facebook.com" class="user">
-            <img src="/ARCO/assets/User.png" alt="User" width="50px">
+            <img src="/assets/User.png" alt="User" width="50px">
         </a>
     </nav>
 
     </div>
     <div class="menu">
-    <button class="create"><img src="/ARCO/assets/Add.png" alt="Add">CREATE</button>
-    <button class="summary"><img src="/ARCO/assets/Summary.png" alt="Summary">SUMMARY</button>
+    <button class="create" onclick="window.location.href='create_form.html'"><img src="/assets/Add.png" alt="Add">CREATE</button>
+    <button class="summary" onclick="window.location.href='index.html'"><img src="/assets/Summary.png" alt="Summary">SUMMARY</button>
+
     </div>
  
 
     <!--calendar--------------------------------------------------------------------------->
     <p class="calendar">CALENDAR OF ACTIVITIES</p>
     <div class="vertical-slider-container">
-        <button class="vertical-nav-button up" onclick="prevVerticalSlide()">^</button>
+        <button class="vertical-nav-button up" onclick="prevVerticalSlide()"><img src="/assets/up.png" alt="up" width="10px"></button>
         <div class="vertical-slider" id="verticalSlider">
             <div class="vertical-slide-set">
                 <button class="vertical-slide" onclick="handleButtonClick(0)">JANUARY</button>
@@ -55,7 +56,7 @@
                 <button class="vertical-slide" onclick="handleButtonClick(11)">DECEMBER</button>
             </div>
         </div>
-        <button class="vertical-nav-button down" onclick="nextVerticalSlide()">v</button>
+        <button class="vertical-nav-button down" onclick="nextVerticalSlide()"><img src="/assets/down.png" alt="down" width="10px"></button>
     </div>
     
     <p class="month">MONTH</p><!--ibahin to every tap in calendar/or baka ako gumawa lmao-->
@@ -64,18 +65,7 @@
     <div class="slider-container">
         <button class="nav-button left" onclick="prevSlide()">❮</button>
         <div class="slider" id="mySlider">
-            <button class="slide" onclick="handleButtonClick(0)">Slide 1</button>
-            <button class="slide" onclick="handleButtonClick(1)">Slide 2</button>
-            <button class="slide" onclick="handleButtonClick(2)">Slide 3</button>
-            <button class="slide" onclick="handleButtonClick(3)">Slide 4</button>
-            <button class="slide" onclick="handleButtonClick(4)">Slide 5</button>
-            <button class="slide" onclick="handleButtonClick(5)">Slide 6</button>
-            <button class="slide" onclick="handleButtonClick(6)">Slide 7</button>
-            <button class="slide" onclick="handleButtonClick(7)">Slide 8</button>
-            <button class="slide" onclick="handleButtonClick(8)">Slide 9</button>
-            <button class="slide" onclick="handleButtonClick(9)">Slide 10</button>
-            <button class="slide" onclick="handleButtonClick(10)">Slide 11</button>
-            <button class="slide" onclick="handleButtonClick(11)">Slide 12</button>
+            <button class="slide" onclick="handleButtonClick(0)">+</button>
         </div>
         <button class="nav-button right" onclick="nextSlide()">❯</button>
     </div>
